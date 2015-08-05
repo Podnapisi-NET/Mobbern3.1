@@ -25,7 +25,7 @@
 
 
 <!-- IF S_FORUM_RULES -->
-<div class="panel panel-default rules<!-- IF U_FORUM_RULES --> rules-link<!-- ENDIF -->">
+<div class="panel panel-default panel-rules rules<!-- IF U_FORUM_RULES --> rules-link<!-- ENDIF -->">
 
   <div class="panel-heading">
     <h3>
@@ -267,7 +267,7 @@
             <!-- ENDIF -->
 
 
-            <div class="responsive-hide">
+            <span class="topic-author">
               <!-- IF topicrow.S_HAS_POLL -->
               <i class="fa fa-bar-chart"></i> 
               <!-- ENDIF -->
@@ -278,7 +278,7 @@
 
               {L_POST_BY_AUTHOR} {topicrow.TOPIC_AUTHOR_FULL} &raquo; {topicrow.FIRST_POST_TIME}
               <!-- IF topicrow.S_POST_GLOBAL and FORUM_ID != topicrow.FORUM_ID --> &raquo; {L_IN} <a href="{topicrow.U_VIEW_FORUM}">{topicrow.FORUM_NAME}</a><!-- ENDIF -->
-            </div>
+            </span>
 
            <!-- EVENT topiclist_row_append -->
 
@@ -314,7 +314,7 @@
 
 <!-- BEGINELSE -->
   <!-- IF S_IS_POSTABLE -->
-  <div class="panel panel-default">
+  <div class="panel panel-default panel-material">
     <div class="panel-heading">
     <h3>Sorry!</h3>
     </div>
@@ -406,7 +406,7 @@
   <div id="forum-stats" class="viewforum-stats">
 
   <!-- IF S_DISPLAY_ONLINE_LIST -->
-    <div class="panel panel-default float-left">
+    <div class="panel panel-secondary float-left">
       <div class="panel-heading">
         <h3>
         <i class="fa fa-question-circle"></i>
@@ -424,7 +424,7 @@
 
 
   <!-- IF S_DISPLAY_POST_INFO -->
-  <div class="panel panel-default float-right">
+  <div class="panel panel-secondary float-right">
     <div class="panel-heading">
     <h3><i class="fa fa-exclamation-triangle"></i> {L_FORUM_PERMISSIONS}</h3>
     </div>

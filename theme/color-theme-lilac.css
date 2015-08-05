@@ -3,7 +3,9 @@
 a, a:link, a:visited, .opts-container .button2, .info-block .display-options .button2, .sidebar-block.tabs-panel .nav-tabs, .sidebar-block.tabs-panel .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus, a.forumtitle:hover, a.forumtitle:active, a.topictitle:hover, a.topictitle:active, .navbar.beadcrumb ul.navlinks a:hover, input.search-icon:focus, .navbar-default .nav > .mega-menu.open > a, .navbar-default .nav > .mega-menu.open > a:hover, .navbar-default .nav > .mega-menu.open > a:focus, #main-navbar .dropdown-menu > li > a, #tabs .activetab a span, #tabs .activetab a:hover span, .search-box .button2 {
   color: #95B; }
 
-#mobbern-header-2 #main-navbar.navbar, .info-block .display-options .button2:hover, .sidebar-block.tabs-panel .nav-tabs, .topiclist > li.header, #main-navbar.navbar-fixed, #main-navbar.navbar-default, .panel .panel-heading, #minitabs li, .posthilit, #tabs, .table1 thead, a.button1, input.button1, input.button3, a.button2, input.button2 {
+#mobbern-header-2 #main-navbar.navbar, .info-block .display-options .button2:hover, .sidebar-block.tabs-panel .nav-tabs, .topiclist > li.header, #main-navbar.navbar-fixed, #main-navbar.navbar-default, .panel .panel-heading, #minitabs li, .posthilit, #tabs, .table1 thead, a.button1, input.button1, input.button3, a.button2, input.button2,
+.btn-default,
+a.btn-default {
   background-color: #95B; }
 
 .content.quick-reply {
@@ -17,7 +19,8 @@ a, a:link, a:visited, .opts-container .button2, .info-block .display-options .bu
 #forum-stats .float-right .panel-heading, li.header dd, div#navbar-searchbox-container {
   border-color: #b27fcc; }
 
-a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover, #main-navbar .navbar-toggle:hover, #main-navbar .navbar-toggle:focus, #tabs a:hover span, .sidebar-block.tabs-panel .nav-tabs>li>a:hover, .sidebar-block.tabs-panel .nav-tabs>li>a:focus {
+a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover, #main-navbar .navbar-toggle:hover, #main-navbar .navbar-toggle:focus, #tabs a:hover span, .sidebar-block.tabs-panel .nav-tabs>li>a:hover, .sidebar-block.tabs-panel .nav-tabs>li>a:focus,
+.btn-default:hover {
   background-color: #b27fcc; }
 
 /* primary-color-lighter */
@@ -25,7 +28,10 @@ a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, inpu
   background-color: #bc90d2; }
 
 /* primary-color-dark */
-a.button1:focus, input.button1:focus, a.button2:focus, input.button2:focus, input.button3:focus, a.button1:active, a.button2:active {
+a.button1:focus, input.button1:focus, a.button2:focus, input.button2:focus, input.button3:focus, a.button1:active, a.button2:active,
+.btn-default:focus, .btn-default:active, .btn-default.active, .btn-default:checked,
+a.btn-default:focus, a.btn-default:active, a.btn-default.active, a.btn-default:checked,
+.navbar .btn.active, .navbar .btn:active, .navbar .btn:focus {
   background-color: #723f8c; }
 
 /* primary-color-darkest */
@@ -47,7 +53,9 @@ html, #page-footer, #simple-wrap .copyright, .carousel .item {
 .panel-primary > .panel-heading .badge, .pagination > li > a, .pagination > li > span, .btn-link, .btn-primary .badge, .text-primary {
   color: #95B; }
 
-.progress-bar, .badge, .label-primary, .navbar-default, .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus, .btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary.active, .btn-primary, .bg-primary {
+.progress-bar, .badge, .label-primary, .navbar-default, .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus, .btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary.active, .btn-primary, .bg-primary,
+.btn.disabled, .btn:disabled,
+a.btn.disabled, a.btn:disabled {
   background-color: #95B; }
 
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus, a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active, .panel-primary, .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
@@ -64,7 +72,8 @@ html, #page-footer, #simple-wrap .copyright, .carousel .item {
   border-bottom-color: #95B; }
 
 /* primary-color-light */
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,
+.navbar .btn:hover {
   background-color: #b27fcc; }
 
 .navbar-default .btn-link[disabled]:hover, fieldset[disabled] .navbar-default .btn-link:hover, .navbar-default .btn-link[disabled]:focus, fieldset[disabled] .navbar-default .btn-link:focus, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
@@ -74,7 +83,10 @@ html, #page-footer, #simple-wrap .copyright, .carousel .item {
 a:hover, a:active, a.forumtitle:hover, a.forumtitle:active, a.topictitle:hover, a.topictitle:active {
   color: #000; }
 
-.copyright a:hover, .footer-panel-body a, .footer-panel-body a:hover, a.button1, input.button1, input.button3, a.button2, input.button2 {
+.copyright a:hover, .footer-panel-body a, .footer-panel-body a:hover, a.button1, input.button1, input.button3, a.button2, input.button2,
+.btn-default, .btn-success, .btn-danger,
+a.btn-default, a.btn-success, a.btn-danger,
+.navbar .btn:hover, .navbar .btn.active, .navbar .btn:active, .navbar .btn:focus {
   color: #FFF; }
 
 
@@ -87,4 +99,47 @@ a:hover, a:active, a.forumtitle:hover, a.forumtitle:active, a.topictitle:hover, 
   background: -ms-linear-gradient(top,  rgba(89,56,119,1) 0%,rgba(112,66,137,1) 100%); /* IE10+ */
   background: linear-gradient(to bottom,  rgba(89,56,119,1) 0%,rgba(112,66,137,1) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#593877', endColorstr='#704289',GradientType=0 ); /* IE6-9 */
+}
+
+/* Pagination */
+.pagination li a,
+.pagination li.disabled a {
+}
+.pagination li:hover a {
+  background-color: #45a9d4;
+  color: #fff;
+}
+.pagination li:active a,
+.pagination li.active a,
+.pagination li:focus a {
+  background-color: #056994;
+}
+.pagination li.disabled:hover a  {
+  background-color: #07B6C6;
+  color: #fff;
+}
+.progress.rating .progress-bar.progress-bar-danger {
+  background-color: #CC342F;
+}
+.progress.rating .progress-bar.progress-bar-success {
+  background-color: #00B46E;
+}
+.progress.rating .progress-bar.progress-bar-warning {
+  background-color: #F0AD4E;
+}
+
+/* Special color for navbar */
+.navbar input[name="keywords"] {
+  height: inherit;
+}
+.navbar .btn {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Override font :) */
+
+body,
+h1, h2, h3, h4, h5, h6, .header, .nav.nav-tabs, #tabs {
+  font-family: "Comic Sans MS", "Chewy", "Open Sans", Helvetica, Arial, sans-serif;
 }

@@ -7,11 +7,12 @@ ul.topiclist {
   margin: 0;
   position: relative;
 }
+
 ul.forums { background: #f9f9f9 none repeat-x 0 0; }
+
 ul.topiclist li {
   display: block;
   list-style-type: none;
-  color: #777777;
   margin: 0;
 }
 ul.topiclist dl { position: relative; }
@@ -38,10 +39,8 @@ ul.topiclist dfn {
   margin-right: 5px;
 }
 
-li.header dt, li.header dd {
-  line-height: 1em;
-  color: #FFFFFF;
-}
+li.header dt,
+li.header dd { line-height: 1em; }
 
 li.header dd { margin-left: 1px; }
 
@@ -350,10 +349,7 @@ fieldset.polls dd div {
 }
 
 /* Poster profile block */
-.postprofile strong {
-  font-weight: normal;
-  color: #000000;
-}
+.postprofile strong { font-weight: normal; }
 .avatar {
   border: none;
   margin-bottom: 3px;

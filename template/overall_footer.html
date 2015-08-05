@@ -90,7 +90,7 @@
   <!-- ENDIF -->
 
 <!-- ELSE -->
-  <!-- INCLUDE m_footer_preset_complex.html -->
+  <!-- INCLUDE m_footer_preset_minimal.html -->
 <!-- ENDIF -->
 
 
@@ -131,13 +131,17 @@
 <!-- INCLUDEJS forum_fn.js -->
 <!-- INCLUDEJS ajax.js -->
 
-
+<script>
+// Be careful with this, needs to be in sync with request.script_root in flask template.
+var $SCRIPT_ROOT = '';
+$(function() {
+  // Our main search bar
+  $('#main_search .btn').button();
+});
+</script>
 
 <!-- BOOTSTRAP JS -->
 <script type="text/javascript" src="{T_THEME_PATH}/js/bootstrap.min.js"></script>
-
-<!-- JQUERY NICESCROLL JS -->
-<script type="text/javascript" src="{T_THEME_PATH}/js/jquery.nicescroll.js"></script>
 
 <!-- JQUERY COOKIE -->
 <script type="text/javascript" src="{T_THEME_PATH}/js/jquery.cookie.js"></script>
@@ -145,23 +149,14 @@
 <!-- Mobbern JS -->
 <script type="text/javascript" src="{T_THEME_PATH}/js/mobbern-js.js"></script>
 
+<!-- jQuery gettext -->
+<script type="text/javascript" src="/static/js/jquery.gettext.js"></script>
 
+<!-- Search bar -->
+<script type="text/javascript" src="/static/js/search.js"></script>
 
-<!-- CUSTOM JS -->
-<script>
-$(document).ready(function(){
-<!-- IF MBRN_SCROLL_CUSTOM == null || MBRN_SCROLL_CUSTOM -->
-
-  // jQuery Nicescroll 
-  if( jQuery().niceScroll ) {
-    var params = { <!-- IF not MBRN_SCROLL_SMOOTH && MBRN_SCROLL_SMOOTH != null -->scrollspeed:2000,mousescrollstep:8*4,smoothscroll:false <!-- ENDIF --> };
-    $("html").niceScroll(params);
-  }
-
-<!-- ENDIF -->
-});
-</script>
-
+<!-- Select2 -->
+<script type="text/javascript" src="/static/select2/select2.js"></script>
 
 
 <!-- EVENT overall_footer_after -->

@@ -14,7 +14,7 @@
 
       <ul class="nav float-left">
         <li class="active">
-          <a id="logo" href="{U_INDEX}" title="{L_INDEX}">
+          <a id="logo" href="/" title="{L_HOME}">
           <!-- IF MBRN_LOGO_IMG != null -->
           <img src="{MBRN_LOGO_IMG}" alt="{SITENAME}" />
           <!-- IF MBRN_LOGO_TEXT != null -->{MBRN_LOGO_TEXT}<!-- ELSE -->{SITENAME}<!-- ENDIF -->
@@ -29,46 +29,97 @@
       </ul>
 
       <div class="navbar-collapse collapse float-left">
-      <ul class="nav navbar-nav">
 
-        <!-- IF MBRN_MENU_MEGA == null || MBRN_MENU_MEGA -->
-        <li class="dropdown mega-menu">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-          <i class="icon fa fa-coffee"></i>Articles <span class="caret"></span>
+        <form id="main_search" class="navbar-form navbar-left" method="get" role="search" action="/forum/search/">
+          <div class="form-group input-group">
+            <span class="input-group-btn">
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default" title="Search subtitles">
+                  <input type="radio" value="subtitles" /><i class="fa fa-file-text"></i>
+                </label>
+                <label class="btn btn-default" title="Search covers">
+                  <input type="radio" value="covers" /><i class="fa fa-file-image-o"></i>
+                </label>
+                <label class="btn btn-default active" title="Search forums">
+                  <input type="radio" value="forum" checked /><i class="fa fa-share-alt"></i>
+                </label>
+              </div>
+            </span>
+
+            <input type="text" class="form-control" autocomplete="off" name="keywords" disabled="" placeholder="Search" />
+
+            <span class="input-group-btn">
+              <button title="Search" type="submit" class="btn btn-default"><span class="fa fa-search"></span></button>
+            </span>
+          </div>
+        </form>
+
+      <ul class="nav navbar-nav">
+        <li id="alternate_search">
+          <a href="/subtitles/search/advanced" class="">
+            <i class="icon fa fa-search"></i>{L_SEARCH}</span>
           </a>
-          <ul class="dropdown-menu">
-            <li class="row">
-              <div class="col-md-4">
-                <h3>Headline</h3>
-                <a href="#" class="headline-panel">
-                  <img class="mega-menu-headline" src="{T_THEME_PATH}/images/menu_headline.png" alt="Headline Article">
-                  <p>Cosby sweater twee scenester wolf vinyl retro authentic mumblecore artisan.</p>
-                </a>
-              </div>
-              <div class="col-md-4">
-                <h3>Links</h3>
-                <ul class="list-unstyled">
-                  <li><a href="#">First link</a></li>
-                  <li><a href="#">Second link</a></li>
-                  <li><a href="#">Third link example</a></li>
-                  <li><a href="#">Fourth link</a></li>
-                  <li><a href="#">Fifth and last link</a></li>
-                </ul>
-              </div>
-              <div class="col-md-4">
-                <h3>Forum Categories</h3>
-                <ul class="list-unstyled">
-                  <li><a href="#">General Discussion</a></li>
-                  <li><a href="#">Off-Topic</a></li>
-                  <li><a href="#">Creative Corner</a></li>
-                  <li><a href="#">Private Forums</a></li>
-                  <li><a href="#">Announcements</a></li>
-                </ul>
-              </div>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="icon fa fa-file-text"></i>Subtitles <span class="caret"></span>
+          </a>
+
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="/subtitles/search/advanced"><i class="icon fa fa-search"></i>Advanced search</a>
+            </li>
+
+            <li class="divider"></li>
+
+            <li>
+              <a href="/subtitles/upload"><i class="icon fa fa-upload"></i>New subtitle</a>
+            </li>
+
+            <li class="divider"></li>
+
+            <li>
+              <a href="/subtitles/latest/"><i class="icon fa fa-bolt"></i>Latest subtitles</a>
+            </li>
+            <li>
+              <a href="/subtitles/latest/movie"><i class="icon fa fa-film"></i>Latest subtitles for movies</a>
+            </li>
+            <li>
+              <a href="/subtitles/latest/tv-series"><i class="icon fa fa-play"></i>Latest subtitles for TV series</a>
+            </li>
+            <li>
+              <a href="/subtitles/latest/mini-series"><i class="icon fa fa-play"></i>Latest subtitles for mini series</a>
             </li>
           </ul>
-        </li><!-- /.mega-menu -->
-        <!-- ENDIF -->
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="icon fa fa-file-image-o"></i>Covers <span class="caret"></span>
+          </a>
+
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="/covers/upload"><i class="icon fa fa-upload"></i>New cover</a>
+            </li>
+
+            <li class="divider"></li>
+
+            <li>
+              <a href="/covers/latest/"><i class="icon fa fa-bolt"></i>Latest covers</a>
+            </li>
+            <li>
+              <a href="/covers/latest/movie"><i class="icon fa fa-film"></i>Latest covers for movies</a>
+            </li>
+            <li>
+              <a href="/covers/latest/tv-series"><i class="icon fa fa-play"></i>Latest covers for TV series</a>
+            </li>
+            <li>
+              <a href="/covers/latest/mini-series"><i class="icon fa fa-play"></i>Latest covers for mini series</a>
+            </li>
+          </ul>
+        </li>
 
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -76,6 +127,9 @@
            <span class="caret"></span>
           </a>
           <ul class="dropdown-menu" role="menu">
+            <li><a href="{U_INDEX}"><i class="fa fa-share-alt"></i>{L_FORUM_INDEX}</a></li>
+
+            <li class="divider"></li>
 
             <!-- IF S_USER_LOGGED_IN -->
             <li><a href="{U_SEARCH_NEW}"><i class="fa fa-bolt"></i>{L_SEARCH_NEW}</a></li>
@@ -113,30 +167,6 @@
         <!-- START: User Menu Items -->
         
         <!-- END: User Menu Items -->
-
-        <!-- IF MBRN_MENU_LINK1 != null -->
-        <li class="menu-item-custom">
-          <a href="{MBRN_MENU_LINKURL1}" title="{MBRN_MENU_LINK1}">
-          <i class="icon fa <!-- IF MBRN_MENU_LINKICON1 != null && MBRN_MENU_LINKICON1 -->{MBRN_MENU_LINKICON1}<!-- ELSE -->fa-star<!-- ENDIF -->"></i>{MBRN_MENU_LINK1}
-          </a>
-        </li>
-        <!-- ENDIF -->
-        <!-- IF MBRN_MENU_LINK2 != null -->
-        <li class="menu-item-custom">
-          <a href="{MBRN_MENU_LINKURL2}" title="{MBRN_MENU_LINK2}">
-          <i class="icon fa <!-- IF MBRN_MENU_LINKICON2 != null && MBRN_MENU_LINKICON2 -->{MBRN_MENU_LINKICON2}<!-- ELSE -->fa-star<!-- ENDIF -->"></i>
-          {MBRN_MENU_LINK2}
-          </a>
-        </li>
-        <!-- ENDIF -->
-        <!-- IF MBRN_MENU_LINK3 != null -->
-        <li class="menu-item-custom">
-          <a href="{MBRN_MENU_LINKURL3}" title="{MBRN_MENU_LINK3}">
-          <i class="icon fa fa-star"></i>{MBRN_MENU_LINK3}
-          <i class="icon fa <!-- IF MBRN_MENU_LINKICON3 != null && MBRN_MENU_LINKICON3 -->{MBRN_MENU_LINKICON3}<!-- ELSE -->fa-star<!-- ENDIF -->"></i>
-          </a>
-        </li>
-        <!-- ENDIF -->
 
       </ul>
       </div>
@@ -246,22 +276,6 @@
      <!-- ENDIF -->
     <!-- ENDIF -->
 
-
-    <!-- IF S_DISPLAY_SEARCH and not S_IN_SEARCH -->
-     <li>
-      <div id="navbar-searchbox-container" class="" role="search" style="width: auto;">
-        <div id="navbar-searchbox">
-          <form action="{U_SEARCH}" method="get" id="search">
-          <fieldset>
-            <input name="keywords" id="keywords" type="text" maxlength="128" title="{L_SEARCH_KEYWORDS}" class="search anim-250" value="" />
-            <input class="search-icon anim-250" value="&#xf002;" title="{L_SEARCH}" type="submit" /> {S_SEARCH_HIDDEN_FIELDS}
-          </fieldset>
-          </form>
-        </div>
-        <i class="icon fa fa-search"></i>
-      </div><!-- /#navbar-searchbox-container -->
-     </li>
-    <!-- ENDIF -->
     </ul>			      
     </div><!-- /.float-right -->
   </div><!-- /.nav-content -->

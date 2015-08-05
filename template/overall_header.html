@@ -16,7 +16,7 @@
 
 {META}
 
-
+<link href="/translation/messages/{S_USER_LANG}.json" lang="{S_USER_LANG}" rel="gettext" />
 
 <title>
 <!-- IF UNREAD_NOTIFICATIONS_COUNT -->({UNREAD_NOTIFICATIONS_COUNT}) 
@@ -87,19 +87,18 @@
 
 
 
-<!-- IF S_ALLOW_CDN -->
-<link href="//fonts.googleapis.com/css?family=Open+Sans:600&amp;subset=latin,cyrillic-ext,latin-ext,cyrillic,greek-ext,greek,vietnamese" rel="stylesheet" type="text/css" media="screen, projection" />
-<!-- ENDIF -->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:600|Chewy&subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css' media="screen, projection" />
 
 
 
 <!-- FONT ICONS : -->
 <link href="{T_THEME_PATH}/css/font-awesome.min.css" rel="stylesheet">
 <!-- To load Font Awesome from maxcdn remove the line above and use :
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 -->
 
-
+<link href="/static/select2/select2.css" rel="stylesheet" />
+<link href="/static/select2/select2-bootstrap.css" rel="stylesheet" />
 
 <!-- JQUERY : -->
 <script src="{T_THEME_PATH}/js/jquery.min.js"></script>
@@ -170,29 +169,139 @@
   <link href="{T_THEME_PATH}/color-theme-azure.css" rel="stylesheet" type="text/css" class="color-theme" />
 <!-- ENDIF -->
 
-<!-- CUSTOM COLOR THEME : -->
-
 <!-- IF MBRN_COLOR_CUSTOM != null -->
-<link rel="stylesheet" href="{T_THEME_PATH}/color-theme.css" type="text/css" class="color-theme" />
+  <!-- CUSTOM COLOR THEME : -->
+  <link rel="stylesheet" href="{T_THEME_PATH}/color-theme.css" type="text/css" class="color-theme" />
 <!-- ENDIF -->
 
+
+<style>
+#main-navbar > .container > .nav-content > .float-left {
+  max-width: 100%;
+}
+
+#page-header input[type="text"] {
+  cursor: text;
+  border: none;
+}
+
+/* Remove round stuff */
+.panel-group .panel,
+.list-group-item:first-child,
+.btn,
+.form-control,
+.pagination li a {
+  border-radius: 0px !important;
+}
+.btn,
+.pagination li a {
+  border: none;
+}
+.btn {
+  /* Copied from mobber theme */
+  transition: all 250ms ease-in-out 0s;
+}
+a[role="button"] {
+  cursor: pointer;
+}
+
+/* Posters */
+.poster {
+  width: 200px;
+  height: 300px;
+}
+.poster.poster-small {
+  width: 100px;
+  height: 150px;
+}
+.poster.poster-title {
+  width: 27px;
+  height: 40px;
+}
+.poster.poster-inline {
+  width: 21px;
+  height: 32px;
+  display: inline;
+}
+
+/* Movie entries */
+a.movie_item {
+  float: left;
+  display: block;
+  width: 150px;
+  height: 225px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+a.movie_item.movie_item-small {
+  width: 100px;
+  height: 150px;
+}
+a.movie_item img,
+a.movie_item .mask {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+a.movie_item img {
+  background-color: #eee;
+}
+a.movie_item .mask {
+  opacity: 0;
+  background-color: #000;
+
+  transition: opacity .5s;
+}
+a.movie_item div.title {
+  height: 100%;
+  margin-bottom: -20px;
+  overflow: hidden;
+  color: #000;
+}
+a.movie_item div.title > span {
+  display: block;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+a.movie_item div.count {
+  position: relative;
+  bottom: 5px;
+  text-align: right;
+  margin-right: 5px;
+}
+a.movie_item span.badge {
+  /* Need to redefine background */
+  background-color: rgba(119, 119, 119, 0.8);
+}
+a.movie_item:hover {
+  text-decoration: none;
+}
+a.movie_item:hover .mask {
+  opacity: 0.5;
+}
+</style>
 
 
 <!-- FAVICON : -->
 <!-- IF MBRN_FAVICON != null -->
   <link rel="shortcut icon" href="{MBRN_FAVICON}" />
 <!-- ELSE -->
-  <link rel="shortcut icon" href="{T_THEME_PATH}/images/favicon.ico" />
+  <link rel="shortcut icon" href="/static/favicon.ico" />
 <!-- ENDIF -->
 
 
 
 <!-- IF MBRN_CP -->
-<!-- CUSTOM CSS RULES: -->
-<!-- INCLUDE m_tcp_style.html -->
-<!-- END: CUSTOM CSS RULES -->
+  <!-- CSS RULES: -->
+  <!-- INCLUDE m_tcp_style.html -->
+  <!-- END: CSS RULES -->
 <!-- ENDIF -->
 
+<!-- SITE CSS : -->
+<link rel="stylesheet" href="{T_THEME_PATH}/style.css" type="text/css" />
 
 
 <!-- EVENT overall_header_head_append -->
@@ -242,7 +351,7 @@
   <!-- ENDIF -->
 
 <!-- ELSE -->
-  <!-- INCLUDE m_header_preset_transnav.html -->
+  <!-- INCLUDE m_header_preset_minimal.html -->
 <!-- ENDIF -->
 
 
@@ -258,7 +367,7 @@
 <a id="start_here" class="anchor"></a>
 
 
-<div id="page-body" class="page-width container <!-- IF not S_FORUM_ID and MBRN_LAYOUT_SIDEBAR or MBRN_LAYOUT_SIDEBAR == null -->layout-with-right-sidebar<!-- ENDIF -->">
+<div id="page-body" class="page-width container <!-- IF not S_FORUM_ID and MBRN_LAYOUT_SIDEBAR -->layout-with-right-sidebar<!-- ENDIF -->">
 
 
 

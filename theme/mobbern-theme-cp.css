@@ -10,7 +10,14 @@ div.theme-cp.sidebar-block.tabs-panel>.nav-tabs>li.active>a:focus {
 	background-color: #FFF !important;
 }
 
-div.theme-cp>.tab-content .panel .panel-body { border: solid 1px #DDD; }
+div.theme-cp>.tab-content .panel .panel-body {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1);
+  box-shadow:         0 2px 2px 0 rgba(0,0,0,0.1);
+
+  border: solid 1px #DDD;
+  border-top: none;
+  margin-top: 0;
+}
 
 div.theme-cp>.tab-content .panel.post-buttons {
 	margin: 0 -15px -5px;

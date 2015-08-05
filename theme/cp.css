@@ -1,299 +1,116 @@
-/* Control Panel Styles
----------------------------------------- */
+.panel-container .panel li.header dd,
+.panel-container .panel li.header dt { margin-bottom: 2px; }
 
-
-/* Main CP box
-----------------------------------------*/
-
-.panel-container .panel li.header dd, .panel-container .panel li.header dt {
-	margin-bottom: 2px;
-}
-
-.panel-container table.table1 {
-	margin-bottom: 1em;
-}
+.panel-container table.table1 { margin-bottom: 1em; }
 
 .panel-container table.table1 thead th {
-	font-weight: bold;
-	border-bottom: 1px solid transparent;
-	padding: 5px;
+  font-weight: bold;
+  border-bottom: 1px solid transparent;
+  padding: 5px;
 }
 
 .panel-container table.table1 tbody th {
-	font-style: italic;
-	background-color: transparent !important;
-	border-bottom: none;
+  font-style: italic;
+  background-color: transparent !important;
+  border-bottom: none;
 }
-
-#cp-main .pm-message {
-	border: 1px solid transparent;
-	margin: 10px 0;
-	width: auto;
-	float: none;
-}
-
-.pm-message h2 {
-	padding-bottom: 5px;
-}
-
-#cp-main .postbody h3, #cp-main .box2 h3 {
-	margin-top: 0;
-}
-
-#cp-main .buttons {
-	margin-left: 0;
-}
-
-#cp-main ul.linklist {
-	margin: 0;
-}
-
-/* MCP Specific tweaks */
-.mcp-main .postbody {
-	width: 100%;
-}
-
-.tabs-container h2 {
-	float: left;
-	margin-bottom: 0px;
-}
-
 
 /* Responsive tabs
 ----------------------------------------*/
-.responsive-tab {
-	position: relative;
-}
+.responsive-tab { position: relative; }
 
 .responsive-tab > a.responsive-tab-link {
-	display: block;
-	font-size: 16px;
-	position: relative;
-	width: 16px;
-	line-height: 14px;
-	text-decoration: none;
+  display: block;
+  font-size: 16px;
+  position: relative;
+  width: 16px;
+  line-height: 14px;
+  text-decoration: none;
 }
 
 .responsive-tab .responsive-tab-link:before {
-	content: '';
-	position: absolute;
-	left: 10px;
-	top: 7px;
-	height: .125em;
-	width: 14px;
-	border-bottom: 0.125em solid transparent;
-	border-top: 0.375em double transparent;
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 7px;
+  height: .125em;
+  width: 14px;
+  border-bottom: 0.125em solid transparent;
+  border-top: 0.375em double transparent;
 }
 
 #tabs .dropdown, #minitabs .dropdown {
-	top: 20px;
-	margin-right: -2px;
-	font-size: 1.1em;
-	font-weight: normal;
+  top: 20px;
+  margin-right: -2px;
+  font-size: 1.1em;
+  font-weight: normal;
 }
 
-#minitabs .dropdown {
-	margin-right: -4px;
-}
+#minitabs .dropdown { margin-right: -4px; }
 
 #tabs .dropdown-up .dropdown, #minitabs .dropdown-up .dropdown {
-	bottom: 20px;
-	top: auto;
+  bottom: 20px;
+  top: auto;
 }
 
-#tabs .dropdown li {
-	text-align: right;
-}
+#tabs .dropdown li { text-align: right; }
 
-#minitabs .dropdown li {
-	text-align: left;
-}
-
-/* UCP navigation menu
-----------------------------------------*/
-/* Container for sub-navigation list */
-#navigation {
-	width: 100%;
-	padding-top: 36px;
-}
-
-#navigation ul {
-	list-style: none;
-}
-
-/* Default list state */
-#navigation li {
-	display: inline;
-	font-weight: bold;
-	margin: 1px 0;
-	padding: 0;
-}
+#minitabs .dropdown li { text-align: left; }
 
 /* Link styles for the sub-section links */
 #navigation a {
-	display: block;
-	padding: 5px;
-	margin: 1px 0;
-	text-decoration: none;
+  display: block;
+  padding: 5px;
+  margin: 1px 0;
+  text-decoration: none;
 }
 
-#navigation a:hover {
-	text-decoration: none;
-}
-
-/* Preferences pane layout
-----------------------------------------*/
-#cp-main h2 {
-	border-bottom: none;
-	padding: 0;
-	margin-left: 10px;
-}
-
-/* Friends list */
-.cp-mini {
-	margin: 10px 15px 10px 5px;
-	max-height: 200px;
-	overflow-y: auto;
-	padding: 5px 10px;
-	border-radius: 7px;
-}
-
-dl.mini dt {
-	font-weight: bold;
-}
-
-dl.mini dd {
-	padding-top: 4px;
-}
-
-.friend-online {
-	font-weight: bold;
-}
-
-.friend-offline {
-	font-style: italic;
-}
-
-/* PM Styles
-----------------------------------------*/
-#pm-menu {
-	line-height: 2.5em;
-}
-
-/* Defined rules list for PM options */
-ol.def-rules {
-	padding-left: 0;
-}
-
-ol.def-rules li {
-	line-height: 180%;
-	padding: 1px;
-}
-
-/* PM marking colours */
-.pmlist li.bg1 {
-	padding: 0 3px;
-}
-
-.pmlist li.bg2 {
-	padding: 0 3px;
-}
-
-.pmlist li.pm_message_reported_colour, .pm_message_reported_colour {
-	border-left-color: transparent;
-	border-right-color: transparent;
-}
+#navigation a:hover { text-decoration: none; }
 
 .pmlist li.pm_marked_colour, .pm_marked_colour,
 .pmlist li.pm_replied_colour, .pm_replied_colour,
 .pmlist li.pm_friend_colour, .pm_friend_colour,
 .pmlist li.pm_foe_colour, .pm_foe_colour {
-	padding: 0;
-	border: solid 3px transparent;
-	border-width: 0 3px;
-}
-
-.pm-legend {
-	border-left-width: 10px;
-	border-left-style: solid;
-	border-right-width: 0;
-	margin-bottom: 3px;
-	padding-left: 3px;
-}
-
-/* Avatar gallery */
-#gallery label {
-	position: relative;
-	float: left;
-	margin: 10px;
-	padding: 5px;
-	width: auto;
-	border: 1px solid transparent;
-	text-align: center;
+  padding: 0;
+  border: solid 3px transparent;
+  border-width: 0 3px;
 }
 
 /* Responsive *CP navigation
 ----------------------------------------*/
 @media only screen and (max-width: 900px), only screen and (max-device-width: 900px)
 {
-	.nojs #tabs a span, .nojs #minitabs a span {
-		max-width: 40px;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		letter-spacing: -.5px;
-	}
+  .nojs #tabs a span, .nojs #minitabs a span {
+    max-width: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: -.5px;
+  }
 
-	#cp-menu, #navigation, #cp-main {
-		float: none;
-		width: auto;
-		margin: 0;
-	}
+  #cp-menu, #navigation, #cp-main {
+    float: none;
+    width: auto;
+    margin: 0;
+  }
 
-	#navigation {
-		padding: 0;
-		margin: 0 auto;
-		max-width: 320px;
-	}
+  #navigation {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 320px;
+  }
 
-	#navigation a {
-		background-image: none;
-	}
+  #navigation a { background-image: none; }
 
-	#navigation li:first-child a {
-		border-top-left-radius: 5px;
-		border-top-right-radius: 5px;
-	}
+  #navigation li:first-child a {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
 
-	#navigation li:last-child a {
-		border-bottom-left-radius: 5px;
-		border-bottom-right-radius: 5px;
-	}
+  #navigation li:last-child a {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
 }
-
-/*
------------------------------------------------------------
------------------------------------------------------------
------------------------------------------------------------
------------------------------------------------------------
------------------------------------------------------------
------------------------------------------------------------
------------------------------------------------------------
------------------------------------------------------------
------------------------------------------------------------
------------------------------------------------------------
------------------------------------------------------------
------------------------------------------------------------
------------------------------------------------------------
------------------------------------------------------------
------------------------------------------------------------
------------------------------------------------------------
------------------------------------------------------------
------------------------------------------------------------
------------------------------------------------------------
------------------------------------------------------------
------------------------------------------------------------
------------------------------------------------------------
-*/
 
 /* Control Panel Styles
 ---------------------------------------- */
@@ -302,19 +119,20 @@ ol.def-rules li {
 #cp-menu { float: left; }
 #cp-main { float: left; }
 #cp-main .content { padding: 0; }
-#cp-main .panel ol {
-  margin-left: 2em;
-}
+#cp-main .panel ol { margin-left: 2em; }
+
 #cp-main table.table1 tbody th {
   font-style: italic;
   background-color: transparent !important;
   border-bottom: none;
 }
+
 #cp-main .pagination {
   float: right;
   width: auto;
   padding-top: 1px;
 }
+
 #cp-main .pm-message {
   border: 1px solid #e2e2e2;
   margin: 10px 0;
@@ -322,7 +140,9 @@ ol.def-rules li {
   width: auto;
   float: none;
 }
+
 .pm-message h2 { padding-bottom: 5px; }
+
 #cp-main .postbody h3, #cp-main .box2 h3 { margin-top: 0; }
 #cp-main .buttons { margin-left: 0; }
 #cp-main ul.linklist { margin: 0; }
@@ -332,10 +152,12 @@ ol.def-rules li {
   float: left;
   margin-bottom: 0px;
 }
+
 .tabs-container #minitabs {
   float: right;
   margin-top: 19px;
 }
+
 .tabs-container:after {
   display: block;
   clear: both;
@@ -349,16 +171,19 @@ ol.def-rules li {
   margin: 20px 0 -1px 7px;
   min-width: 570px;
 }
+
 #tabs ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 #tabs li {
   display: inline;
   margin: 0;
   padding: 0;
 }
+
 #tabs a {
   float: left;
   margin: 0;
@@ -372,11 +197,13 @@ ol.def-rules li {
   line-height: normal;
   margin: -20px 7px 0 0;
 }
+
 #minitabs ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 #minitabs li {
   display: block;
   float: right;
@@ -386,16 +213,20 @@ ol.def-rules li {
   background-color: #f2f2f2;
   margin-left: 2px;
 }
+
 #minitabs a:hover { text-decoration: none; }
 #minitabs li.activetab { background-color: #F9F9F9; }
-#minitabs li.activetab a, #minitabs li.activetab a:hover { color: #333333; }
+#minitabs li.activetab a,
+#minitabs li.activetab a:hover { color: #333333; }
 
-/* UCP navigation menu */
+/* UCP navigation menu
+----------------------------------------*/
 /* Container for sub-navigation list */
 #navigation {
   width: 100%;
   padding-top: 36px;
 }
+
 #navigation ul { list-style: none; }
 
 /* Default list state */
@@ -405,6 +236,7 @@ ol.def-rules li {
   font-weight: bold;
   display: inline;
 }
+
 #navigation #active-subsection a { display: block; }
 
 /* Preferences pane layout */
@@ -412,6 +244,7 @@ ol.def-rules li {
   border-bottom: none;
   padding: 0;
 }
+
 #page-body #cp-main h2 { margin-top: 40px }
 
 /* Friends list */
@@ -419,16 +252,20 @@ dl.mini dt {
   font-weight: bold;
   color: #676767;
 }
+
 dl.mini dd { padding-top: 4px; }
+
 .friend-online { font-weight: bold; }
 .friend-offline { font-style: italic; }
 
-/* PM Styles */
+/* PM Styles
+----------------------------------------*/
 #pm-menu { line-height: 2.5em; }
 
 /* PM panel adjustments */
 .reply-all a.left { background-position: 3px 60%; }
 .reply-all a.left:hover { background-position: 0px 60%; }
+
 .reply-all {
   font-size: 11px;
   padding-top: 5px;
@@ -439,6 +276,7 @@ dl.mini dd { padding-top: 4px; }
 
 /* Defined rules list for PM options */
 ol.def-rules { padding-left: 0; }
+
 ol.def-rules li {
   line-height: 180%;
   padding: 1px;
@@ -447,30 +285,37 @@ ol.def-rules li {
 /* PM marking colours */
 .pmlist li.bg1 { padding: 0 3px; }
 .pmlist li.bg2 { padding: 0 3px; }
-.pmlist li.pm_message_reported_colour, .pm_message_reported_colour {
-  border-left-color: #bcbcbc;
-  border-right-color: #bcbcbc;
+
+.pmlist li.pm_message_reported_colour,
+.pm_message_reported_colour {
+  border-left-color: transparent;
+  border-right-color: transparent;
 }
-.pmlist li.pm_marked_colour, .pm_marked_colour {
-  padding: 0;
+
+.pmlist li.pm_marked_colour,
+.pm_marked_colour {
   border: solid 3px #ffffff;
   border-width: 0 3px;
 }
-.pmlist li.pm_replied_colour, .pm_replied_colour {
-  padding: 0;
+
+.pmlist li.pm_replied_colour,
+.pm_replied_colour {
   border: solid 3px #c2c2c2;
   border-width: 0 3px;
 }
-.pmlist li.pm_friend_colour, .pm_friend_colour {
-  padding: 0;
+
+.pmlist li.pm_friend_colour,
+.pm_friend_colour {
   border: solid 3px #bdbdbd;
   border-width: 0 3px;
 }
-.pmlist li.pm_foe_colour, .pm_foe_colour {
-  padding: 0;
+
+.pmlist li.pm_foe_colour,
+.pm_foe_colour {
   border: solid 3px #000000;
   border-width: 0 3px;
 }
+
 .pm-legend {
   border-left-width: 10px;
   border-left-style: solid;
@@ -490,4 +335,5 @@ ol.def-rules li {
   border: 1px solid #CCC;
   text-align: center;
 }
+
 #gallery label:hover { background-color: #EEE; }

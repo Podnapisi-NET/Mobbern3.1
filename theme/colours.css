@@ -104,9 +104,9 @@ li.notification-disapproved strong { color: #D31141; }
 .icon-unsubscribe               {  }
 
 /* Profile & navigation icons */
-.contact-icon                   { background-image: url("./svg/icons_contact.png"); }
+.contact-icon                   {  }
 .icon-button:before,
-.dropdown-select:after          { background-image: url("./svg/icons_button.png"); }
+.dropdown-select:after          {  }
 
 /* Forum icons & Topic icons */
 .global_read                    { background-image: url("./svg/announce_read.svg"); }
@@ -187,7 +187,7 @@ table.info tbody th { color: #000; }
 
 .sep { color: #1198D9; }
 
-.error { color: #BC2A4D; }
+.error { color: #EB6454 !important; }
 .reported { background-color: #FFEBBA; }
 li.reported:hover { background-color: #ECD5D8 !important; }
 
@@ -261,8 +261,6 @@ fieldset.polls dd div { color: #FFFFFF; }
 .pollbar3 { background-color: #D11A4E; }
 .pollbar4 { background-color: #E41653; }
 .pollbar5 { background-color: #F81157; }
-
-.postprofile strong { color: #000; }
 
 /* Mini tabbed menu used in MCP */
 #minitabs li { background-color: #E1EBF2; }

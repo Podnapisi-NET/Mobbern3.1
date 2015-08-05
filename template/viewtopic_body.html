@@ -236,11 +236,11 @@
                 <!-- IF REMAINDER eq 0 -->
                 <!-- ENDIF -->
 
-                 <li>
+                <li>
                   <a href="<!-- IF postrow.contact.U_CONTACT -->{postrow.contact.U_CONTACT}<!-- ELSE -->{postrow.U_POST_AUTHOR}<!-- ENDIF -->" title="{postrow.contact.NAME}"<!-- IF $S_LAST_CELL --> class="last-cell"<!-- ENDIF --><!-- IF postrow.contact.ID eq 'jabber' --> onclick="popup(this.href, 750, 320); return false;"<!-- ENDIF -->>
-                    <i class="fa contact-icon {postrow.contact.ID}-icon"></i>&nbsp;&nbsp;&nbsp; {postrow.contact.NAME}
+                    <i class="fa contact-icon {postrow.contact.ID}-icon"></i>&nbsp;&nbsp; {postrow.contact.NAME}
                   </a>
-                 </li>
+                </li>
 
                 <!-- IF REMAINDER eq 3 or postrow.contact.S_LAST_ROW -->
                 <!-- ENDIF -->
