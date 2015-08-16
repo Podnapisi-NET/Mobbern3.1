@@ -15,10 +15,10 @@
 		<!-- IF not S_EDIT_POST -->
 		{L_TO_ADD_MASS}{L_COLON}
 		<dl class="pmlist">
-			<dt><textarea id="username_list" name="username_list" class="inputbox" cols="50" rows="2" tabindex="1"></textarea></dt>
-			<dd class="recipients">
-			<input type="submit" name="add_to" value="{L_ADD}" class="button2" tabindex="1" />
-			<input type="submit" name="add_bcc" value="{L_ADD_BCC}" class="button2" tabindex="1" />
+			<dt><textarea id="username_list" name="username_list" class="form-control" cols="40" rows="5" tabindex="1"></textarea></dt>
+			<dd class="recipients"><br /><br />
+			<input type="submit" name="add_to" value="{L_ADD}" class="button2" tabindex="1" />&nbsp;&nbsp;
+			<input type="submit" name="add_bcc" value="{L_ADD_BCC}" class="button2" tabindex="1" />&nbsp;&nbsp;
 			<!-- EVENT posting_pm_header_find_username_before -->
 			<a href="{U_FIND_USERNAME}" class="button1" onclick="find_username(this.href); return false;">
 			<i class="fa fa-search"></i>&nbsp;&nbsp;{L_FIND_USERNAME}</a>
