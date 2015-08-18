@@ -4,9 +4,9 @@
   <div class="full-width">
 
     <!-- IF S_GROUP_OPTIONS -->
-      <div class="column2">
-        <label for="group_list"><strong>{L_TO_ADD_GROUPS}{L_COLON}</strong></label><br />
-        <select name="group_list[]" id="group_list" multiple="multiple" size="3" class="inputbox">{S_GROUP_OPTIONS}</select><br />
+      <div class="column2" style="margin-top: -7px;">
+        <label for="group_list">{L_TO_ADD_GROUPS}{L_COLON}</label>
+        <select name="group_list[]" id="group_list" multiple="multiple" size="4" class="form-control" style="width: 100% !important; ">{S_GROUP_OPTIONS}</select><br />
       </div>
     <!-- ENDIF -->
     
@@ -15,15 +15,15 @@
     <!-- IF not S_EDIT_POST -->
     {L_TO_ADD_MASS}{L_COLON}
     <dl class="pmlist">
-      <dt><textarea id="username_list" name="username_list" class="form-control" cols="40" rows="5" tabindex="1"></textarea></dt>
-      <dd class="recipients"><br /><br />
+      <dt style="width: 100% !important;"><textarea id="username_list" name="username_list" class="form-control" cols="40" rows="4" tabindex="1"></textarea></dt>
+      <dt class="recipients"  style="width: 100% !important; margin-top: 5px !important;"><br /><br />
       <input type="submit" name="add_to" value="{L_ADD}" class="button2" tabindex="1" />&nbsp;&nbsp;
       <input type="submit" name="add_bcc" value="{L_ADD_BCC}" class="button2" tabindex="1" />&nbsp;&nbsp;
       <!-- EVENT posting_pm_header_find_username_before -->
       <a href="{U_FIND_USERNAME}" class="button1 pull-right" onclick="find_username(this.href); return false;">
       <i class="fa fa-search"></i>&nbsp;&nbsp;{L_FIND_USERNAME}</a>
       <!-- EVENT posting_pm_header_find_username_after -->
-      </dd>
+      </dt>
     </dl>
     <!-- ENDIF -->
 
