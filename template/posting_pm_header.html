@@ -4,9 +4,9 @@
   <div class="full-width">
 
     <!-- IF S_GROUP_OPTIONS -->
-      <div class="column2" style="margin-top: -7px;">
+      <div class="column2" style="margin-top: -12px;">
         <label for="group_list">{L_TO_ADD_GROUPS}{L_COLON}</label>
-        <select name="group_list[]" id="group_list" multiple="multiple" size="4" class="form-control" style="width: 100% !important; ">{S_GROUP_OPTIONS}</select><br />
+        <select name="group_list[]" id="group_list" multiple="multiple" size="3" class="form-control" style="width: 100% !important; ">{S_GROUP_OPTIONS}</select><br />
       </div>
     <!-- ENDIF -->
     
@@ -27,7 +27,7 @@
     </dl>
     <!-- ENDIF -->
 
-    <!-- IF .to_recipient or .bcc_recipient --><hr /><!-- ENDIF -->
+    <!-- IF .to_recipient or .bcc_recipient --><hr style="border-top: 1px dashed #CCCCCC; margin: 10px 0;"><!-- ENDIF -->
 
     <!-- IF .to_recipient -->
     <dl>
@@ -48,7 +48,7 @@
     <!-- IF .bcc_recipient -->
     <dl>
       <dt><label>{L_BCC}{L_COLON}</label></dt>
-      <dd class="recipients">
+      <dd class="recipients" style="margin-left: 0px !important;">
         <ul class="recipients">
           <!-- BEGIN bcc_recipient -->
           <li>
